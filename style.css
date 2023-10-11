@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+:root {
+  --main-font: "Inter", sans-serif;
+}
+
+body {
+  background-color: #202433;
+  overflow-x: hidden;
+}
+.container {
+  width: 80%;
+  height: 90vh;
+  margin: 30px auto;
+  display: flex;
+}
+.left-side {
+  width: 40%;
+  font-family: var(--main-font);
+  background-image: url(assets/Rectangle\ 2.png);
+  background-size: cover;
+  padding: 20px;
+}
+.left-side .logo {
+  display: inline-block;
+  background-color: #33394f;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  border-radius: 50%;
+}
+.left-side span:nth-child(2) {
+  color: #33394f;
+  font-weight: 600;
+}
+.left-side form {
+  color: #202433;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+}
+.left-side form label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.left-side form input {
+  background-color: transparent;
+  border: 2px solid #33394f;
+  border-radius: 9px;
+  margin-top: 5px;
+  color: #202433;
+  padding: 10px;
+}
+.left-side form input:focus {
+  outline: none;
+  color: #202433;
+}
+input[type="checkbox"] {
+  align-self: start;
+  border-radius: 50%;
+  appearance: none;
+  position: relative;
+}
+input[type="submit"] {
+  margin-top: 50px !important;
+  font-family: var(--main-font);
+  font-weight: bold;
+  color: #202433;
+  transition: 0.5s;
+}
+input[type="submit"]:hover {
+  margin-top: 50px !important;
+  font-family: var(--main-font);
+  background-color: #33394f;
+  font-weight: bold;
+  color: white;
+}
+.copyright {
+  display: inline-block;
+  font-size: 12px;
+  font-family: var(--main-font);
+  font-weight: 600;
+  color: #202433;
+  margin-top: 4em;
+}
+.appear::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  background-color: #202433;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+}
+.right-side {
+  width: 60%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--main-font);
+  color: white;
+}
+.findBooks span:nth-child(1) {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+}
+.findBooks span:nth-child(2),
+input,
+button {
+  margin-top: 20px;
+}
+.findBooks span:nth-child(2) {
+  opacity: 60%;
+}
+.findBooks input {
+  padding: 7px 15px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  margin-left: 5px;
+  font-family: var(--main-font);
+  background-color: #33394f;
+  color: white;
+}
+.findBooks button {
+  background-color: #fc728b;
+  color: #202433;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.right-side .clasification {
+  letter-spacing: 1.1px;
+  font-size: 18px;
+  margin-top: 2em;
+}
+.right-side .book {
+  background-color: #33394f;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.right-side .book span {
+  font-size: 13px;
+}
+.right-side .book button {
+  font-weight: bold;
+  padding: 10px 0px;
+  border-radius: 7px;
+  border: none;
+}
+.right-side .book .remove {
+  background-color: #fc728b;
+}
+
+aside {
+  position: fixed;
+  background-color: #fc728b;
+  width: 300px;
+  height: 200px;
+  left: 40%;
+  top: 40%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 14px;
+  font-size: 20px;
+  font-family: var(--main-font);
+  text-align: center;
+  display: none;
+}
+aside button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+}
+aside button:nth-child(3) {
+  background-color: #33394f;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0;
+    align-items: center;
+  }
+  .left-side {
+    width: 100%;
+  }
+  .right-side {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1028px) and (min-width: 768px) {
+  .left-side {
+    height: max-content;
+  }
+}

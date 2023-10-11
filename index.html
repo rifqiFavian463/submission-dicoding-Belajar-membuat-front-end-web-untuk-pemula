@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="left-side">
+        <span class="logo">BS</span>
+        <span>Bookshelf App</span>
+        <form>
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" required />
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" required />
+          <label for="year">Year</label>
+          <input type="number" name="year" id="year" required />
+          <label for="isComplete">Finished Reading</label>
+          <input type="checkbox" class="" name="isComplete" id="isComplete" />
+          <input type="submit" value="Submit" />
+        </form>
+        <span class="copyright">&copy Rifqi Favian Hibatullah</span>
+      </section>
+      <section class="right-side">
+        <div class="findBooks">
+          <span>Search Books</span>
+          <span>Title</span>
+          <input type="text" class="title-search" />
+          <button class="search-button">Search</button>
+        </div>
+        <h5 class="clasification">Not Finished Reading</h5>
+        <div class="book-container"></div>
+        <h5 class="clasification">Finished Reading</h5>
+        <div class="finished-book-container"></div>
+      </section>
+    </div>
+    <aside>
+      <h5>Are you sure want to delete?</h5>
+      <button class="confirm-cancel">Cancel</button>
+      <button class="confirm-delete">Delete</button>
+    </aside>
+    <script src="app.js"></script>
+  </body>
+</html>
